@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 5px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+    background-image: url('./Avicola-Presupuesto2020_1_bd5f287a0b58bac6d5af2b31028c0683.jpg');
+}
+.logo{
+    width: 105px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 0%;
+    padding: 0%;
+}
+.logo:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+}
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: rgb(212, 2, 2);
+    text-shadow: 2px 2px  white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(212, 2, 2);
+    text-shadow: 2px 2px  white;
+}
+aside > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(212, 2, 2);
+    text-shadow: 2px 2px  white;
+}
+.header {
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: auto;
+}
+.header:hover {
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0.363);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.uno{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+    background-image: url('./avicolas\ pequeños.jpg');
+    background-size: cover;
+}
+.uno:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    max-width: 100px;
+}
+.dos{
+    box-shadow: -1px 1px 7px 0px  rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+    background-image: url('nosotros.jpg');
+    background-size: cover;
+}
+.dos:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    max-width: 100px;
+}
+.tres{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+    background-image: url('./Pollo-pelado.jpg');
+    background-size: cover;
+}
+.tres:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    max-width: 100px;
+}
+.cuatro{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+    background-image: url('contacto.jpg');
+    background-size: cover;
+}
+.cuatro:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    max-width: 100px;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: rgba(139, 0, 0, 0);
+    background-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+}
+.navbar:hover{
+    grid-area: navbar;
+    background-color: rgba(255, 255, 255, 0.382);
+}
+.navbar a{
+    color: black;
+    text-shadow: 1px 1px gray;
+}
+.imgnav{
+    width: 50px;
+    border-radius: 20px;
+}
+.logo3{
+    width: 400px;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px gray;
+}
+.sidebar:hover{
+    grid-area: sidebar;
+    background-color: rgba(255, 255, 255, 0.441);
+    background-size: cover;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px gray;
+}
+.productos{
+    height: 150px;
+}
+.wh{
+    width: 150px;
+}
+.tw{
+    width: 150px;
+}
+.fc{
+    width: 150px;
+}
+.main{
+    background-color: rgba(255, 255, 255, 0);
+}
+.main:hover{
+    background-color: rgba(255, 255, 255, 0.187);
+}
+.imgmain{
+    width: 100px;
+    border-radius: 20px;
+}
+.imgmain:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+}
+.footer {
+    grid-area: footer;
+    height: 100px;
+}
+.footer:hover{
+    background-color: rgba(255, 255, 255, 0.375);
+}
+@media (min-width:600px){
+    .grid-container{
+        grid-gap: 20px;
+        grid-template: 
+        "header  header" 140px
+        "navbar  navbar" auto
+        "sidebar main"   auto 
+        "footer  footer" 100px/
+        200px    auto;
+        overflow-y: scroll;
+    }
+}
+@media (min-width:900px){
+    .grid-container{
+        grid-template: 
+        "header  header header"  140px
+        "navbar  main   sidebar" auto
+        "footer  footer footer"  100px/
+        150px    auto    200px;
+        overflow-y: scroll;
+    }
+    .navbar {
+        grid-area: navbar;
+        grid-template: 
+        "uno"       100px
+        "dos"       100px
+        "tres"      100px
+        "cuatro"    100px;
+        grid-row-gap: 20px;
+    }
+}
